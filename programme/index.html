@@ -39,7 +39,33 @@
             font-family:'Roboto Slab',serif;
             font-size: 1.1em;
         }
+        .abstract {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #52739e;
+            text-align: justify;
+        }
+        .abstract-toggle {
+            cursor: pointer;
+            color: #3a6194;
+            text-decoration: underline;
+        }
+        .abstract-toggle:hover {
+            color: #52739e;
+        }
     </style>
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "block") {
+                abstract.style.display = "none";
+            } else {
+                abstract.style.display = "block";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -100,7 +126,10 @@
                 11:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('BenCoxAbstract')">Quantitative Photoacoustic Tomography</span>
+                <div id="BenCoxAbstract" class="abstract">
+                    Photoacoustic tomography consists of two inverse problem: an acoustic inversion from boundary data and a diffuse optical inversion from interior data. I will describe the optical inversion and discuss to what extent it has been solved and what challenges remain.
+                </div>
             </td>
         </tr>
         <tr>
@@ -116,7 +145,10 @@
                 12:00
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('BillLionheartAbstract')">Symmetries and Polarization Tensors for Electromagnetic Detection</span>
+                <div id="BillLionheartAbstract" class="abstract">
+                    In many inverse problems we want to detect, locate or classify objects. In the context of electromagnetic detection of objects in the eddy current regime polarization tensors can be used to represent the effect of an object on the field. We show how the symmetries of the object can be understood inter terms of harmonic polynomials invariant under groups. We also show how the real and imaginary parts of the rank 2-tensor can be used for classification and discuss the measurement of how the eigenvectors differ. While ML is a powerful tool for classification, novel algebra and geometry also arises in these problems. (Joint work with Paul Ledger and James Elgy)
+                </div>
             </td>
         </tr>
         <tr>
@@ -132,7 +164,10 @@
                 12:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('TanjaTarvainenAbstract')">Utilising the radiative transfer equation in optical tomography</span>
+                <div id="TanjaTarvainenAbstract" class="abstract">
+                    Image reconstruction in optical tomography is an ill-posed problem that needs to be approached in the framework of inverse problems. Computational solutions of this problem require modelling of light propagation. In biological tissues, the radiative transfer equation or its approximations are used as light transport models. In this talk, utilising the radiative transfer equation in optical tomography is discussed. Especially, the use of approximative models and modelling of the related errors and uncertainties are studied.
+                </div>
             </td>
         </tr>
         <tr>
@@ -175,7 +210,10 @@
                 15:00
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('DavidBarberAbstract')">Survival and Why?</span>
+                <div id="DavidBarberAbstract" class="abstract">
+                    A central tool in Survival Analysis is the Cox Model. We argue that despite its utility in as a ranking objective there are potentially better alternatives for time to death prediction, with an example application to Idiopathic Pulmonary Fibrosis. A second issue we address is how to interpret medical images to identify biomarkers. We argue that standard perturbative methods such as GradCam are unreliable and we provide a robust alternative that is inherently interpretable. We apply the method to identifying biomarkers of IPF in CT scans, revealing very different results than standard perturbation analysis.
+                </div>
             </td>
         </tr>
         <tr>
@@ -202,7 +240,10 @@
                 16:00
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('CarolaSchoenliebAbstract')">Learning regularisation for inverse problems</span>
+                <div id="CarolaSchoenliebAbstract" class="abstract">
+                    Inverse problems are about the reconstruction of an unknown physical quantity from indirect measurements. Most inverse problems of interest are ill-posed and require appropriate mathematical treatment for recovering meaningful solutions. Regularization is one of the main mechanisms to turn inverse problems into well-posed ones by adding prior information about the unknown quantity to the problem, often in the form of assumed regularity of solutions. Classically, such regularization approaches are handcrafted. Examples include Tikhonov regularization, the total variation and several sparsity-promoting regularizers such as the L1L1 norm of Wavelet coefficients of the solution. While such handcrafted approaches deliver mathematically and computationally robust solutions to inverse problems, providing a universal approach to their solution, they are also limited by our ability to model solution properties and to realise these regularization approaches computationally. Recently, a new paradigm has been introduced to the regularisation of inverse problems, which derives regularisation approaches for inverse problems in a data driven way. Here, regularisation is not mathematically modelled in the classical sense, but modelled by highly over-parametrised models, typically deep neural networks, that are adapted to the inverse problems at hand by appropriately selected (and usually plenty of) training data. In this talk, I will review some machine learning based regularisation techniques, present some work on unsupervised and deeply learned (weakly) convex regularisers and their application to image reconstruction from tomographic measurements.
+                </div>
             </td>
         </tr>
         <tr>
@@ -218,7 +259,10 @@
                 16:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('KrisThielemansAbstract')">Open Source Software as a tool for research in advanced synergistic image reconstruction</span>
+                <div id="KrisThielemansAbstract" class="abstract">
+                    The use of Open Source Software (OSS) continues to grow in the research community, ideally complemented by open data. There is therefore a strong need for researchers to contribute to OSS to enhance its capabilities. In this talk, I will present examples of advanced image reconstruction methods that were developed in joint research with Prof Arridge and illustrate how the research benefitted from existing OSS tools, but also how initial proof-of-concept code has been further developed into contributions to various OSS packages, enabling other researchers to evaluate and improve these methods. Examples will be from multi-modality reconstruction using PET, SPECT and/or MR data.
+                </div>
             </td>
         </tr>
         <tr>
@@ -274,7 +318,11 @@
                 10:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('PeterMaassAbstract')">Back to the roots - a simple analysis of how learning with the wrong error level effects reconstructions</span>
+                <div id="PeterMaassAbstract" class="abstract">
+                    P. Maass, M. Iske
+                    Learning regularization schemes for inverse problems more often than not do use data with a fixed noise level. We use a somewhat simplified abstract analytical model in order to analyse the effect of applying such methods to data with different noise levels. As a start we analyse how classical regularzation schemes such as Tikhonov, where the regularization parameter is chosen according to some noise level, behave when applied to data with rather different noise levels.
+                </div>
             </td>
         </tr>
         <tr>
@@ -301,7 +349,12 @@
                 11:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('TeresaCorreiaAbstract')">No time to waste - faster optical imaging and MRI scans</span>
+                <div id="TeresaCorreiaAbstract" class="abstract">
+                    Teresa Matias Correia, Quantitative Bio-Imaging Lab CCMAR, Faro, Portugal
+                    
+                    Non-invasive imaging technologies have improved our understanding of human health and disease. Recently, advances in imaging speed, coupled with faster imaging reconstruction, processing and analysis methodologies, have improved accuracy and efficiency, subject comfort and scan tolerance, facilitated dynamic studies across various fields of research and clinical practice, enabled real-time monitoring and quantitative analyses. In this talk, I will describe some of our past and ongoing research focused on the development of accelerated workflows, including AI-based approaches, particularly for cardiac magnetic resonance imaging (CMR) and 3D optical imaging.
+                </div>
             </td>
         </tr>
         <tr>
@@ -344,7 +397,10 @@
                 14:00
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('JohnSchotlandAbstract')">Optical Tomography Redux</span>
+                <div id="JohnSchotlandAbstract" class="abstract">
+                    I will revisit some old stories from the golden age of optical tomography and will discuss a possible role for machine learning. This is joint work with Lu Lu and Zijian Wang.
+                </div>
             </td>
         </tr>
         <tr>
@@ -360,7 +416,12 @@
                 14:30
             </td>
             <td class="title">
-                <a href="">TBA</a>
+                <span class="abstract-toggle" onclick="toggleAbstract('CosimoAndreaAbstract')">Multispectral fluorescence lifetime microscopy based on computational imaging techniques</span>
+                <div id="CosimoAndreaAbstract" class="abstract">
+                    Valerio Gandolfi, Federico Simoni, Alberto Ghezzi, Shivaprasad Varakkoth, Serban C. Tudosie, Simon Arridge, Gianluca Valentini, Andrea Farina and Cosimo D'Andrea
+                    
+                    We present a wide-field 3D multispectral fluorescence lifetime imaging (λ FLIM) microscope combining compressive sensing, single-pixel camera, structured illumination and data fusion techniques in an integrated computational imaging approach towards real-time acquisition of multidimensional optically sectioned images. The extension of the proposed approach for wide field imaging of biological tissue will be discussed.
+                </div>
             </td>
         </tr>
         <tr>
