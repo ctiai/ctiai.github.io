@@ -55,6 +55,21 @@
         .abstract-toggle:hover {
             color: #52739e;
         }
+        .poster-presenter {
+            font-weight: bold;
+            color: #3a6194;
+        }
+        .poster-abstract {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 0.9em;
+        }
+        .poster-list {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
     </style>
     <script>
         function toggleAbstract(id) {
@@ -184,6 +199,56 @@
             </td>
             <td class="title-special">
                 Lunch & Poster Session
+                <div class="poster-list">
+                    <div>
+                        <span class="poster-presenter">Xinyuan Wang</span>
+                        <div class="poster-abstract">X-ray Computed Tomography (CT) is an essential imaging modality to reveal the interior of static objects in many fields like science, healthcare and industrial inspection. However, the sequential nature of its data acquisition limits its capacity to visualize dynamic processes with high temporal resolution and conventional image reconstruction techniques applied to dynamic CT result in considerable motion artifacts. While more sophisticated dynamic image reconstruction methods can improve upon the spatial and temporal resolution to some extend, the full potential of dynamic CT is not yet realized. We propose a multiscale temporal learning approach to accelerate the Time-dependent Deep Image Prior and enhance reconstruction quality. Our framework integrates these techniques into real-world dynamic CT applications, leveraging deep generative models in an unsupervised setting. We validate its effectiveness on both simulated and real data, demonstrating faster convergence and improved reconstruction fidelity.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Ziyang Chen</span>
+                        <div class="poster-abstract">I explored novel applications of cameras that capture images without conventional lenses, instead using computational methods to reconstruct images from encoded light patterns. This approach enables extremely compact and low-cost imaging systems with wide fields of view. I have developed a tracking system combining laser speckle patterns with lensless imaging that achieves sub-degree accuracy for AR/VR applications. My research aims to leverage miniaturized imaging system to achieve novel data captures.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Shady Adib</span>
+                        <div class="poster-abstract">This abstract outlines the development of self-generating digital twins enhanced by generative AI, physics-informed machine learning, and dynamic diffusion models for real-time structural health monitoring (SHM). By integrating inverse problem-solving techniques with advanced AI methods, this framework addresses key challenges in structural damage detection, uncertainty quantification, and predictive analysis. These innovations provide fast, accurate, and reliable solutions, contributing to infrastructure resilience and sustainability. This research aligns with the workshop's themes, demonstrating how the synergy of classical mathematics and AI can transform practical applications in engineering and beyond.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Serban Cristian Tudosie</span>
+                        <div class="poster-abstract">Title: Learned single-pixel fluorescent microscopy. Abstract: Single-pixel imaging (SPI) has recently become a key imaging technique in microscopy, significantly reducing the cost of multispectral and time-resolved systems. SPI relies on compressive sensing theory and requires retrieving the image from multiple measurements – dot products between the sample and structured light. In practice, current approaches solve an ROF model for the compressed noisy measurements and use orthogonal pseudorandom patterns for illumination. We show that we can achieve higher compression and quality by leveraging data to learn the patterns and the reconstruction function, accelerating scientific discoveries in fluorescent microscopy.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Sam Porter</span>
+                        <div class="poster-abstract">We propose a new method for the joint reconstruction of PET and SPECT data in the context of Yttrium-90 emission tomography using directional total nuclear variation prior. We present a preliminary comparison with another state of the art method, hybrid kernelised expectation maximisation. The potential advantages and trade-offs of each method are explored, with a particular focus on quantification as a key factor in improving dosimetry.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Oriol Roche i Morgó</span>
+                        <div class="poster-abstract">Electron ptychography is an imaging method which provides 2D and 3D images of materials at atomic-level resolution, by finding the complex function which describes the electron (illumination) probe and the object. We present a machine learning model which gives an initial guess for the probe when presented with a set of raw data. This guess is then used as a seed for the ptychographic reconstruction algorithm called extended ptychographic iterative engine (ePIE), which potentially saves time and improves convergence, therefore simplifying the imaging and reconstruction process. This can also be extended to x-ray ptychography.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Nazila Kazemigazestane</span>
+                        <div class="poster-abstract">PhD project combines Spectral Domain Optical Coherence Tomography (SD-OCT) with advanced deep learning techniques for non-invasive assessments with the aim of early caries detection. Its objectives include enhancing diagnostic accuracy, developing deep learning models for caries classification, and establishing an open-access OCT dataset. By integrating OCT with machine learning, the research emphasizes earlier, more accurate, and non-invasive care, advancing precision dentistry and ultimately improving patient outcomes.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Nadja Gruber</span>
+                        <div class="poster-abstract">We propose Noisier2Inverse, a self-supervised deep learning approach for joint denoising and reconstruction of inverse problems with statistically correlated noise. Such noise appears in computed tomography, microscopy, and seismic imaging due to detector imperfections, photon scattering, or physical interactions. Building on Noisier2Noise, our method eliminates the need for clean-noisy image pairs and requires only a few training samples. We design a specialized loss function that outperforms two-step approaches and surpasses state-of-the-art self-supervised CT reconstruction in correlated noise scenarios. A key assumption is knowledge of the noise distribution, which we assess through ablation studies to determine required parameter accuracy.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Maximilian Kiss</span>
+                        <div class="poster-abstract">In this benchmarking study, we use 2DeteCT, a real-world experimental computed tomography dataset, for comparing machine learning based CT image reconstruction algorithms. We provide a pipeline for easy implementation and evaluation and test post-processing methods, learned/unrolled iterative methods, learned regularizer methods, and plug-and-play methods using key performance metrics, including SSIM and PSNR. We showcase the effectiveness of various algorithms on tasks such as full data reconstruction, limited-angle reconstruction, sparse-angle reconstruction, low-dose reconstruction, and beam-hardening corrected reconstruction. The reproducible setup of methods and CT image reconstruction tasks in LION, an open-source toolbox, enables straightforward addition and comparison of new methods.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Matt Foster</span>
+                        <div class="poster-abstract">Weakly Nonlinear Ray Theory with Applications in HIFU: Focused ultrasound is used in a therapeutic treatment (HIFU) and uses ultrasound waves to non-invasively destroy malignant cells inside the human body. This work presents a nonlinear ray tracing approach to modelling the focused waves. The ray equations are identical to those from linear ray theory while the amplitude equation is a nonlinear transformation of the Burgers' equation. These rays ignore the diffraction of the wave, so are replaced by Finite Frequency rays to avoid caustics. The results of this method are then compared with the pseudo-spectral solution of the Westervelt equation.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Martin Ludvigsen</span>
+                        <div class="poster-abstract">We show Maximum Discrepancy NMF (MDNMF), a variant of Non-Negative Matrix Factorization (NMF) for inverse problems and source separation. MDNMF learns both features of true and adversarial data. We demonstrate how NMF dictionaries can automatically detect and remove noise, leading to improved signal reconstruction in image and audio data.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Marcos Obando</span>
+                        <div class="poster-abstract">In the Bayesian framework, the solution of the inverse problem of reconstructing the image is given by the posterior distribution which combines our prior knowledge about the image with the measurement information. When using state-of-the-art implicit priors, the posterior can only be accessed by sophisticated sampling techniques. In sequential OED (sOED), we adapt the sensing pattern during the measurement process. Due to prohibiting real-time implementations, we explore solving sOED using reinforcement learning (RL): RL attempts to learn a policy, i.e., a mapping of the current posterior distribution to a probability distribution over which sensing pattern is best to choose next.</div>
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
@@ -384,6 +449,48 @@
             </td>
             <td class="title-special">
                 Lunch & Poster Session
+                <div class="poster-list">
+                    <div>
+                        <span class="poster-presenter">Klara Bas</span>
+                        <div class="poster-abstract">Quantitative MRI enables comparable results in longitudinal and multicentre studies. I use variational inference for parcellating grey matter structures like amygdala from multimodal MRI data. Multiparametric Mapping (MPM) data is used to estimate PD, MT, R1, and R2* maps, while diffusion data is used to generate probabilistic tracts modeling neural pathways. These are represented as a 2D connectivity histogram. A generative model, is optimised with variational Bayes inference to cluster voxels, providing tissue priors in average space and subject-specific parcellations. This data-driven, in-vivo approach enhances structural segmentation for neuroscience research.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Lara Bonney</span>
+                        <div class="poster-abstract">PET imaging data contains a wealth of quantitative information (radiomics) that could provide valuable contributions to characterising tumours when combined with other 'omic data. However, dependence on image acquisition and reconstruction methods limits the generalisability of radiomic models. Radiomic feature stability to image noise was assessed by varying reconstruction methods, using a dual approach in a retrospective sarcoma clinical dataset (N=20) and a modular heterogeneous imaging phantom. The next phase will identify reliable and useful features for heterogeneity assessment in a 10-year retrospective sarcoma cohort from Oxford University Hospitals (N=1,052).</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Lara Carter</span>
+                        <div class="poster-abstract">My research focuses on leveraging Natural Language Processing (NLP) to address inefficiencies and fragmentation in pharmacokinetic (PK) modelling. By developing a unified framework for automating the extraction and synthesis of PK data from biomedical texts, my work integrates Named Entity Recognition (NER) and Named Entity Linking (NEL) using a multi-task learning approach. This innovative pipeline mitigates error propagation and enhances data processing efficiency. Extracted data will form a comprehensive PK database to optimize dosing model selection through neural networks and algorithmic methods. Ultimately, this research aims to streamline clinical trials, reduce costs, and improve drug development outcomes.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Imraj Singh</span>
+                        <div class="poster-abstract">In this work we will show the direct formulation of inverse problems with Gaussian basis-functions. In particular, we introduce added flexibility by making the basis-functions learnable.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Jakob Reichmann</span>
+                        <div class="poster-abstract">X-ray nano-holotomography (XNH) has recently emerged as a scalable, non-destructive, imaging modality complementary to electron microscopy, most prominently for 3D tissue analysis and connectomics research. To increase the resolution of XNH to reliably identify synaptic connections and fine axons or spine heads, resolving power can be increased by algorithmical/computational advances, namely new iterative reconstruction schemes for simultaneous retrieval of the complex-valued probe function. Additionally, ANNs can enhance image quality through denoising and transfer learning between multimodal, correlative datasets. These advancements position XNH as a powerful tool for connectomics research.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Andrea Mazzolani</span>
+                        <div class="poster-abstract">As an early-career researcher with a PhD in biomedical engineering and five years of experience in deep learning, I specialise in developing innovative models for biomedical imaging and optical coherence elastography. My work includes optimising convolutional neural networks (CNNs) for strain prediction in tissue samples and accelerating computational frameworks for realistic image simulations. I am eager to deepen my knowledge of cutting-edge deep learning techniques and engage with experts in the field to further advance my research and applications.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Faustin</span>
+                        <div class="poster-abstract">I'm mater's student, deep learning is my passion, I would be very happy to acquire the knowledge.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Emilio McAllister Fognini</span>
+                        <div class="poster-abstract">We propose a neural network architecture, Neural-FMM, that integrates the Fast Multipole Method (FMM) into a hierarchical machine learning framework for parameterising the Green's operator of elliptic PDEs. Our architecture leverages the FMM's computation flow to efficiently separate local and far-field interactions, learning their respective representations. The Neural-FMM replaces the traditional hand-crafted FMM translation operators with deep feedforward neural networks while maintaining non-local information flow. We will also discuss modifications to handle non-stationary kernels and numerical experiments on inhomogeneous and heterogeneous Helmholtz equations to demonstrate the Neural-FMM's effectiveness in solving scattering problems with variable sound speed maps and incident fields.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Elliott Macneil</span>
+                        <div class="poster-abstract">Photoacoustic tomography (PAT) is a hybrid imaging technique based on the photoacoustic effect. The PAT forward problem can be modelled as an initial value problem for the linear wave equation. Fourier Neural Operators (FNO) offer a data-driven, resolution-invariant approach to efficiently solve this problem. However, due to Fourier mode truncation, they struggle to express higher frequency data. Gaussian Beams (GB), on the other hand, are an example of a high frequency approximation to the linear wave equation. We propose a novel hybrid GB-FNO approach for efficiently solving the PAT forward problem, whilst capturing the whole frequency spectrum.</div>
+                    </div>
+                    <div>
+                        <span class="poster-presenter">Dongdong Chen</span>
+                        <div class="poster-abstract">Exploring self-supervised learning and generative modelling for inverse problems in computational imaging and vision.</div>
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
